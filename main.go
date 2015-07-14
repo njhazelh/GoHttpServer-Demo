@@ -23,7 +23,7 @@ func (h HelloHandler) Handle(req *httpserver.HttpRequest, res *httpserver.HttpRe
 func main() {
 	server := httpserver.NewServer()
 	server.AddHandle("/", HelloHandler{"Bob"})
-	server.AddHandle("/frank", HelloHandler{"Frank"})
-	server.AddHandle("/russel", HelloHandler{"Russel"})
+	server.AddHandle("/frank", HelloHandler{"Frank Johnson"})
+	server.AddHandle("/russel", HelloHandler{"Russel Harrison"})
 	server.Run(":8080")
 }
