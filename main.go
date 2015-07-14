@@ -25,6 +25,5 @@ func main() {
 	server.AddHandle("/", HelloHandler{"Bob"})
 	server.AddHandle("/frank", HelloHandler{"Frank"})
 	server.AddHandle("/russel", HelloHandler{"Russel"})
-	fmt.Printf("%v\n", server.Handlers["/"].String())
 	server.Run(":8080")
 }
